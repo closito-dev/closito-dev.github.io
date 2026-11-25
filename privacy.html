@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Closito</title>
+  <meta name="description" content="Closito is an agentic QA platform in development. Provisional public information, privacy policy, and terms of service.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="index.html">
+        <img src="favicon.svg" width="36" height="36" alt="">
+        Closito
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html" aria-current="page">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Provisional version. Last updated: November 25, 2026.</p>
+    <p class="note">Version provisoire de la politique de confidentialité de Closito, un outil d’assurance qualité logicielle encore en développement. Exploitant : Simon Benhamou (personne physique, Israël). Contact : closito.dev@outlook.com.</p>
+
+    <h2>1. Who we are</h2>
+    <p>Closito is an agentic software quality-assurance (QA) platform in development and early access. Closito is not a company or incorporated entity. The service is operated by Simon Benhamou, an individual based in Israel.</p>
+    <p>Contact: <a href="mailto:closito.dev@outlook.com">closito.dev@outlook.com</a>.</p>
+
+    <h2>2. Scope of this policy</h2>
+    <p>This provisional policy describes how Closito handles information when you use the service, including when you connect third-party accounts so that Closito can help you work with your code, tickets, and deployments.</p>
+    <p>Because Closito is still in development, the service currently runs in local development only. Hosting providers for a future deployment have not been chosen yet.</p>
+
+    <h2>3. Information we process</h2>
+    <p>Depending on how you use Closito, we may process:</p>
+    <ul>
+      <li>Account and contact details you provide, such as your name and email address.</li>
+      <li>Project and workspace data you create in Closito.</li>
+      <li>Information from third-party services you choose to connect, as described below.</li>
+      <li>Technical logs needed to operate and debug the service (for example, connection errors).</li>
+    </ul>
+    <p>We only access third-party data after you explicitly authorize the connection (OAuth or an equivalent installation flow). We request only the permissions needed to provide the service.</p>
+
+    <h2>4. Third-party connectors</h2>
+    <h3>GitHub</h3>
+    <p>If you connect GitHub, you install the Closito GitHub App on the account or organization and the repositories you choose. Closito then uses short-lived installation tokens to access those selected repositories in order to provide the service, for example to work with the project’s code and related issues or pull requests. Closito does not merge pull requests and does not push to a repository’s default branch.</p>
+    <h3>Jira (Atlassian)</h3>
+    <p>If you connect Jira, Closito uses Atlassian OAuth 2.0 with your consent. The current scopes are:</p>
+    <ul>
+      <li><code>read:jira-work</code> — read Jira work items and related project data.</li>
+      <li><code>write:jira-work</code> — create or update Jira work items as needed for the service.</li>
+      <li><code>offline_access</code> — obtain refresh tokens so the connection can stay active until you disconnect.</li>
+    </ul>
+    <h3>Azure DevOps (Microsoft)</h3>
+    <p>If you connect Azure DevOps, Closito uses Microsoft Entra ID with your consent. The current permissions include:</p>
+    <ul>
+      <li><code>vso.profile</code> — read your Azure DevOps profile.</li>
+      <li><code>vso.project</code> — read projects.</li>
+      <li><code>vso.work_write</code> — read and write work items.</li>
+      <li><code>vso.build_execute</code> — run pipelines when needed for the service.</li>
+      <li><code>offline_access</code> — obtain refresh tokens so the connection can stay active until you disconnect.</li>
+      <li>Microsoft Graph <code>User.Read</code> — read your basic Microsoft profile to complete sign-in.</li>
+    </ul>
+    <h3>Vercel</h3>
+    <p>If you connect Vercel, you install the Closito integration on the Vercel team or account you choose. Closito stores the installation identifier and uses short-lived access tokens to access that installation in order to provide the service (for example, information related to deployments).</p>
+
+    <h2>5. How we store and use this information</h2>
+    <p>OAuth access tokens and refresh tokens are stored encrypted with AES-256-GCM. They are used only to provide the Closito service you requested.</p>
+    <p>We do not sell your data. We do not use your data for advertising. We do not claim any certifications we do not have.</p>
+
+    <h2>6. Retention</h2>
+    <p>We keep connected-account data and tokens until you disconnect the integration or ask us to delete your data. After you disconnect, Closito deletes the stored tokens for that connection. You may also email <a href="mailto:closito.dev@outlook.com">closito.dev@outlook.com</a> to request deletion of your data.</p>
+
+    <h2>7. Sharing and processors</h2>
+    <p>We do not share your data with third parties except:</p>
+    <ul>
+      <li>the providers you connect (GitHub, Atlassian, Microsoft, and Vercel), as needed to operate those connections; and</li>
+      <li>service providers we may use in the future to host or operate Closito.</li>
+    </ul>
+    <p>Hosting and other processors have not yet been decided. Closito currently runs in local development only. If this changes, this policy will be updated.</p>
+
+    <h2>8. Your choices</h2>
+    <p>You can disconnect a provider at any time in Closito. You can request access to, correction of, or deletion of personal data by emailing <a href="mailto:closito.dev@outlook.com">closito.dev@outlook.com</a>.</p>
+
+    <h2>9. Changes</h2>
+    <p>This is a provisional policy and may change as Closito develops. The “Last updated” date at the top will be revised when we make changes.</p>
+
+    <h2>10. Contact</h2>
+    <p>Simon Benhamou<br>Email: <a href="mailto:closito.dev@outlook.com">closito.dev@outlook.com</a></p>
+
+  </main>
+  <footer>
+    <div class="inner">
+      <p>Closito — agentic QA platform, in development. Operated by Simon Benhamou (individual, Israel).</p>
+      <p>Provisional version. Last updated: November 25, 2026. Contact: <a href="mailto:closito.dev@outlook.com">closito.dev@outlook.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
